@@ -7,6 +7,10 @@
 html
 {
   height: 100%;
+    --bg: #0b0b0b;
+  --text: #eaeaea;
+  --muted: #9aa0a6;
+  * { transition: background-color .2s ease, color .2s ease; }
 }
 
 body
@@ -210,10 +214,11 @@ margin-left: auto;
   }
 }
 
-
-
-
-
-
-
-
+:root.dark {
+      --bg: #0b0d10;
+      --card: #0f1316;
+      --text: #e6eef6;
+      --muted: #9aa6b2;
+      --accent: #4f9cff;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    }
